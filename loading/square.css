@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    background:rgb(0, 0, 0);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    max-width: 100%;
+   
+}
+div{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    height:100vh;
+   width: 100%;
+   
+}
+span{
+    position:absolute;
+    background:transparent;
+    height:200px;
+    width:200px;
+}
+span:nth-child(1){
+    position:relative;
+    height:30px;
+    top: -14%;
+    left: 14%;
+    background-image:linear-gradient(to right , red, transparent);
+    animation: anim1 0.5s linear infinite;
+}
+span:nth-child(2){
+    position:relative;
+    width:30px;
+    top: -33%;
+    left: -7%;
+    background-image:linear-gradient(to top , blue, transparent);
+    animation: anim2 0.5s linear infinite;
+}
+span:nth-child(3){
+    position:relative;
+    height:30px;
+    top: 14%;
+    left: -17%;
+    background-image:linear-gradient(to left , green, transparent);
+    animation: anim3 0.5s linear infinite;
+}
+span:nth-child(4){
+    position:relative;
+    width:30px;
+    top: 29%;
+    left: -8%;
+    background-image:linear-gradient(to bottom , yellow, transparent);
+    animation: anim4 0.5s linear infinite;
+}
+@keyframes anim1{
+    100%{
+        left:-5%;
+    }
+}
+@keyframes anim2{
+    100%{
+        top:5%;
+    }
+}
+
+@keyframes anim3{
+    100%{
+        left:5%;
+    }
+}
+
+@keyframes anim4{
+    100%{
+        top:-5%;
+    }
+}
+p{
+    position:absolute;
+    top:305px;
+    left:45%;
+    text-transform: uppercase;
+}
